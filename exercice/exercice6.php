@@ -7,5 +7,12 @@
 $M = array_shift($args);
 for ($i = 0; $i < $M; $i++) {
     $N = $args[$i];
-    echo "{$N}\n";
+    
+    if ($N %2 == 0) {
+        $N = $N + 1;
+        echo "{$N}\n";
+    }
+    else 
+        echo "{$N}\n";
+   
 }
